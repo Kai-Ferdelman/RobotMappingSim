@@ -1,7 +1,12 @@
 # ninja log v5
-0	6	0	clean	5005e9a6b1e2b29
-0	1674	6892290245986153	RobotMappingSim/CMakeFiles/RobotMappingSim.dir/RobotMappingSim.cpp.obj	e9dcadbd724b2b1e
-1676	2815	6892290249825899	RobotMappingSim/RobotMappingSim.exe	d6308d3ee05eca20
 0	7	0	clean	5005e9a6b1e2b29
 3	1694	6892291248870471	RobotMappingSim/CMakeFiles/RobotMappingSim.dir/RobotMappingSim.cpp.obj	e9dcadbd724b2b1e
 1695	2403	6892291250017587	RobotMappingSim/RobotMappingSim.exe	d6308d3ee05eca20
+0	7	0	clean	5005e9a6b1e2b29
+3	1794	6892342406198432	RobotMappingSim/CMakeFiles/RobotMappingSim.dir/MainFrame.cpp.obj	ae03a4a536c143e0
+9	1804	6892342406338055	RobotMappingSim/CMakeFiles/RobotMappingSim.dir/RobotMappingSim.cpp.obj	e9dcadbd724b2b1e
+1805	2623	6892342408183102	RobotMappingSim/RobotMappingSim.exe	75822a29b7aa21b0
+3	1553	6892343266912504	RobotMappingSim/CMakeFiles/RobotMappingSim.dir/RobotMappingSim.cpp.obj	e9dcadbd724b2b1e
+1554	2339	6892343268248980	RobotMappingSim/RobotMappingSim.exe	75822a29b7aa21b0
+2	1539	6892343407906186	RobotMappingSim/CMakeFiles/RobotMappingSim.dir/RobotMappingSim.cpp.obj	e9dcadbd724b2b1e
+1539	2264	6892343409212785	RobotMappingSim/RobotMappingSim.exe	75822a29b7aa21b0
