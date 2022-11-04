@@ -79,6 +79,14 @@ build RobotMappingSim\CMakeFiles\RobotMappingSim.dir\RobotMappingSim.cpp.obj: CX
   TARGET_COMPILE_PDB = RobotMappingSim\CMakeFiles\RobotMappingSim.dir\
   TARGET_PDB = RobotMappingSim\RobotMappingSim.pdb
 
+build RobotMappingSim\CMakeFiles\RobotMappingSim.dir\MainFrame.cpp.obj: CXX_COMPILER__RobotMappingSim_Debug ..\..\..\RobotMappingSim\MainFrame.cpp || cmake_object_order_depends_target_RobotMappingSim
+  FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1
+  INCLUDES = -Ivcpkg_installed\x64-windows\lib\mswu -Ivcpkg_installed\x64-windows\include
+  OBJECT_DIR = RobotMappingSim\CMakeFiles\RobotMappingSim.dir
+  OBJECT_FILE_DIR = RobotMappingSim\CMakeFiles\RobotMappingSim.dir
+  TARGET_COMPILE_PDB = RobotMappingSim\CMakeFiles\RobotMappingSim.dir\
+  TARGET_PDB = RobotMappingSim\RobotMappingSim.pdb
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target RobotMappingSim
@@ -87,7 +95,7 @@ build RobotMappingSim\CMakeFiles\RobotMappingSim.dir\RobotMappingSim.cpp.obj: CX
 #############################################
 # Link the executable RobotMappingSim\RobotMappingSim.exe
 
-build RobotMappingSim\RobotMappingSim.exe: CXX_EXECUTABLE_LINKER__RobotMappingSim_Debug RobotMappingSim\CMakeFiles\RobotMappingSim.dir\RobotMappingSim.cpp.obj | vcpkg_installed\x64-windows\debug\lib\wxmsw32ud_core.lib vcpkg_installed\x64-windows\debug\lib\wxbase32ud.lib
+build RobotMappingSim\RobotMappingSim.exe: CXX_EXECUTABLE_LINKER__RobotMappingSim_Debug RobotMappingSim\CMakeFiles\RobotMappingSim.dir\RobotMappingSim.cpp.obj RobotMappingSim\CMakeFiles\RobotMappingSim.dir\MainFrame.cpp.obj | vcpkg_installed\x64-windows\debug\lib\wxmsw32ud_core.lib vcpkg_installed\x64-windows\debug\lib\wxbase32ud.lib
   FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1
   LINK_FLAGS = /machine:x64 /debug /INCREMENTAL /subsystem:windows
   LINK_LIBRARIES = vcpkg_installed\x64-windows\debug\lib\wxmsw32ud_core.lib  vcpkg_installed\x64-windows\debug\lib\wxbase32ud.lib  winmm.lib  comctl32.lib  uuid.lib  oleacc.lib  uxtheme.lib  rpcrt4.lib  shlwapi.lib  version.lib  wsock32.lib  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib
