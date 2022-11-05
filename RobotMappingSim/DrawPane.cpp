@@ -1,4 +1,5 @@
 #include "DrawPane.h"
+#include "constants.h"
 #include <wx/wx.h>
 
 DrawPane::DrawPane(wxFrame* parent) : wxPanel(parent) {
@@ -16,20 +17,22 @@ void DrawPane::paintNow() {
 }
 
 void DrawPane::render(wxDC& dc) {
-    // draw some text
-    dc.DrawText(wxT("Testing"), 40, 60);
 
-    // draw a circle
-    dc.SetBrush(*wxGREEN_BRUSH); // green filling
-    dc.SetPen(wxPen(wxColor(255, 0, 0), 5)); // 5-pixels-thick red outline
-    dc.DrawCircle(wxPoint(200, 100), 25 /* radius */);
+	//Real view screen
+    dc.SetBrush(*wxTRANSPARENT_BRUSH);
+    dc.SetPen(wxPen(wxColor(0, 0, 0), 1));
+    dc.DrawRectangle(REAL_VIEW_X, REAL_VIEW_Y, REAL_VIEW_WIDTH, REAL_VIEW_HEIGHT);
+    dc.DrawText("Real View", 10, 10);
 
-    // draw a rectangle
-    dc.SetBrush(*wxBLUE_BRUSH); // blue filling
-    dc.SetPen(wxPen(wxColor(255, 175, 175), 10)); // 10-pixels-thick pink outline
-    dc.DrawRectangle(300, 100, 400, 200);
+    //Robots view screen
+    dc.SetBrush(*wxTRANSPARENT_BRUSH);
+    dc.SetPen(wxPen(wxColor(0, 0, 0), 1));
+    dc.DrawRectangle(ROBOT_VIEW_X, ROBOT_VIEW_Y, ROBOT_VIEW_WIDTH, ROBOT_VIEW_HEIGHT);
+    dc.DrawText("Robots View", 10, HEIGHT / 2 + 10);
 
-    // draw a line
-    dc.SetPen(wxPen(wxColor(0, 0, 0), 3)); // black line, 3 pixels thick
-    dc.DrawLine(300, 100, 700, 300); // draw line across the rectangle
+    //Controls screen
+    dc.SetBrush(*wxTRANSPARENT_BRUSH);
+    dc.SetPen(wxPen(wxColor(0, 0, 0), 1));
+    dc.DrawRectangle(CONTROLS_VIEW_X, CONTROLS_VIEW_Y, CONTROLS_WIDTH, CONTROLS_HEIGHT);
+    dc.DrawText("Controls", WIDTH / 5 * 4 + 10, 10);
 }

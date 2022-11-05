@@ -4,7 +4,7 @@
 cmake_minimum_required (VERSION 3.8)
 
 # Add source to this project's executable.
-add_executable (RobotMappingSim WIN32 "RobotMappingSim.cpp"  "MainFrame.cpp" "MainFrame.h" "RobotMappingSim.h" "DrawPane.cpp" "DrawPane.h")
+add_executable (RobotMappingSim WIN32 "RobotMappingSim.cpp"  "MainFrame.cpp" "MainFrame.h" "RobotMappingSim.h" "DrawPane.cpp" "DrawPane.h" "constants.h")
 
 find_package(wxWidgets REQUIRED)
 

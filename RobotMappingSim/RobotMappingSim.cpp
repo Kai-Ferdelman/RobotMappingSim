@@ -1,6 +1,7 @@
 ﻿#include "RobotMappingSim.h"
 #include "MainFrame.h"
 #include "DrawPane.h"
+#include "constants.h"
 #include <wx/wx.h>
 
 wxIMPLEMENT_APP(RobotMappingSim);
@@ -19,7 +20,9 @@ bool RobotMappingSim::OnInit() {
 
 
 	wxBoxSizer* sizer = new wxBoxSizer(wxHORIZONTAL);
-	mainFrame = new wxFrame((wxFrame*)NULL, -1, wxT("Hello wxDC"), wxPoint(50, 50), wxSize(800, 600));
+	mainFrame = new MainFrame("Robot Mapping simulation");
+	mainFrame->SetClientSize(WIDTH, HEIGHT);
+	mainFrame->Center();
 
 	drawPane = new DrawPane((wxFrame*)mainFrame);
 	sizer->Add(drawPane, 1, wxEXPAND);
